@@ -1,0 +1,19 @@
+---
+title: "leafletmaps"
+author: "vinit pandey"
+date: "August 30, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=43.1594, lng= -79.2469, popup="My Office")
+my_map
+```
+
