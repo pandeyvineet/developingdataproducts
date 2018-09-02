@@ -1,0 +1,21 @@
+---
+title: "PlotlyDisplay"
+author: "vinit pandey"
+date: "September 1, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Instructions:
+#Create a web page presentation using R Markdown that features a plot created with Plotly. Host your webpage on either GitHub Pages, RPubs, or NeoCities. Your webpage must contain the date that you created the document, and it must contain a plot created with Plotly. We would love to see you show off your creativity!
+#Plotly: showing a 3D Scatterplot
+#using the mtcars package:
+```{r}
+library(plotly)
+plot_ly(x=mtcars$wt,y=mtcars$mpg,z=mtcars$hp,type="scatter3d", 
+        mode="markers", color=mtcars$wt)
+```
+
